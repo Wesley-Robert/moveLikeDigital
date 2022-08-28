@@ -9,7 +9,7 @@
 
 body{
     background-color: #e3f0ff;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 .container{
@@ -155,6 +155,7 @@ footer{
     display: flex;
     background-color: #434C74;
     justify-content: center;
+    width: 100%;
 }
 
 .foot-tx{
