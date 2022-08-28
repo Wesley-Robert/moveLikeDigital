@@ -31,9 +31,9 @@ nav .menu-icon{
 }
 
 nav .logo a{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-    color: #434C74;
+    color: #5654b3;
     text-decoration: none;
 }
 
@@ -49,14 +49,14 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    font-size: 19px;
+    font-size: 17px;
     text-transform: uppercase;
-    color: #434C74;
+    color: #5654b3;
 }
 
 nav ul button{
     border: none;
-    background-color: #CE508F;
+    background-color: #5654b3;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -83,11 +83,11 @@ main{
 }
 
 .text-bx h1 strong{
-    color: #CE508F;
+    color: #f1676b;
 }
 
 .text-bx p{
-    color: #434C74;
+    color: #372c62;
     font-weight: 400;
     margin-top: 20px;
 }
@@ -105,19 +105,19 @@ main{
     padding: 10px;
     border: none;
     outline: none;
-    color: #434C74;
+    color: #8997b9;
     font-size: 16px;
 }
 
 .text-bx .input-bx input::placeholder{
-    color: #434C74;
+    color: #8997b9;
 }
 
 .text-bx .input-bx button{
     outline: none;
     border: none;
     padding: 10px 20px;
-    background-color: #434C74;
+    background-color: #5654b3;
     color: #fff;
     cursor: pointer;
     font-size: 15px;
@@ -132,12 +132,10 @@ main{
 }
 
 .medias-sociais i{
-    width: 40px;
-    height: 40px;
-    font-size: 28px;
+    font-size: 23px;
     margin: 0 3px;
     color: #fff;
-    background-color: #434C74;
+    background-color: #372c62;
     padding: 7px;
     border-radius: 5px;
 }
@@ -148,37 +146,6 @@ main{
 
 .img-bx img{
     width: 100%;
-    transition: 1s ease-in-out;
-}
-
-footer{
-    display: flex;
-    background-color: #434C74;
-    justify-content: center;
-}
-
-.foot-tx{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.foot-tx ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 55px;
-}
-
-.foot-tx ul li{
-    margin: 10px 15px;
-    list-style: none;
-    color: #fff;
-}
-
-.foot-tx ul li a{
-    text-decoration: none;
-    color: #fff;
 }
 
 @media (max-width: 970px) {
@@ -198,7 +165,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         transition: 0.2s ease-in;
-        background-color: #434C74;
+        background-color: #372c62;
     }
 
     nav ul.active{
@@ -207,7 +174,6 @@ footer{
 
     nav ul li{
         padding: 10px;
-        border-bottom: 1px solid #fff;
     }
 
     nav ul li a{
@@ -216,7 +182,7 @@ footer{
     }
 
     nav ul button{
-        background-color: #CE508F;
+        background-color: #f1676b;
         font-size: 18px;
         margin: 10px;
     }
@@ -236,9 +202,5 @@ footer{
 
     .text-bx .input-bx{
         justify-content: center;
-    }
-
-    .foot-tx ul{
-        flex-direction: column;
     }
 }
