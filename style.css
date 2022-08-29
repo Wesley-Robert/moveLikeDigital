@@ -30,7 +30,22 @@ nav .menu-icon{
     display: none;
 }
 
+nav .logo a img{
+    width: 90px;
+    transform: translateY(5%);
+}
+
+nav .logo a strong{
+    margin-top: 25px;
+}
+
+nav .logo a b{
+    margin-top: 60px;
+    color: #fc8b0a;
+}
+
 nav .logo a{
+    display: flex;
     font-size: 40px;
     font-weight: bold;
     color: #434C74;
@@ -156,6 +171,7 @@ footer{
     background-color: #434C74;
     justify-content: center;
     width: 100%;
+    margin-top: 7.2vh;
 }
 
 .foot-tx{
