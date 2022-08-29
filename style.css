@@ -69,6 +69,10 @@ nav ul li a{
     color: #434C74;
 }
 
+nav ul li #logoNav{
+    display: none;
+}
+
 nav ul button{
     border: none;
     background-color: #fc8b0a;
@@ -78,7 +82,12 @@ nav ul button{
     font-size: 16px;
     letter-spacing: 1px;
     margin-left: 20px;
-    cursor: pointer;   
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul button:hover{
+    background-color: #434C74;
 }
 
 main{
@@ -113,15 +122,12 @@ main{
 
 }
 
-.text-bx .input-bx input{
-    width: 60%;
-    display: block;
-    height: 50px;
-    padding: 10px;
-    border: none;
-    outline: none;
+.text-bx .input-bx a{
+    padding: 0px 0px 0px 2px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
     color: #434C74;
-    font-size: 16px;
 }
 
 .text-bx .input-bx input::placeholder{
@@ -141,7 +147,7 @@ main{
 .medias-sociais{
     margin-top: 30px;
     display: flex;
-
+    justify-content: left;
 }
 
 .medias-sociais a{
@@ -161,9 +167,12 @@ main{
     background-color: #434C74;
     padding: 7px;
     border-radius: 5px;
+    transition: 0.2s ease-in;
 }
 
-
+.medias-sociais i:hover{
+    background-color: #fc8b0a;
+}
 
 .img-bx{
     width: 60%;
@@ -237,7 +246,33 @@ footer{
 
     nav ul li a{
        font-size: 18px;
-       color: #fff; 
+       color: #fff;
+    }
+
+    nav ul li #logoNav{
+        display: flex;
+        border: 2px solid #fff;
+        border-radius: 250px;
+        width: 200px;
+        height: 200px;
+    }
+
+    nav ul li #logoNav img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 70px;
+        margin: 60px 15px;
+    }
+
+    nav ul li #logoNov p strong{
+        margin-top: 90px;
+        color: #fc8b0a;
+    }
+
+    nav ul li #logoNav b{
+        margin-top: 40px;
     }
 
     nav ul button{
@@ -260,6 +295,12 @@ footer{
     }
 
     .text-bx .input-bx{
+        justify-content: center;
+    }
+
+    .medias-sociais{
+        margin-top: 30px;
+        display: flex;
         justify-content: center;
     }
 
