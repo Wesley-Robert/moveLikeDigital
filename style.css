@@ -71,7 +71,7 @@ nav ul li a{
 
 nav ul button{
     border: none;
-    background-color: #CE508F;
+    background-color: #fc8b0a;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -98,7 +98,7 @@ main{
 }
 
 .text-bx h1 strong{
-    color: #CE508F;
+    color: #fc8b0a;
 }
 
 .text-bx p{
