@@ -140,6 +140,8 @@ main{
 
 .medias-sociais{
     margin-top: 30px;
+    display: flex;
+
 }
 
 .medias-sociais a{
@@ -147,8 +149,12 @@ main{
 }
 
 .medias-sociais i{
-    width: 40px;
-    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
     font-size: 28px;
     margin: 0 3px;
     color: #fff;
@@ -156,6 +162,8 @@ main{
     padding: 7px;
     border-radius: 5px;
 }
+
+
 
 .img-bx{
     width: 60%;
@@ -233,7 +241,7 @@ footer{
     }
 
     nav ul button{
-        background-color: #CE508F;
+        background-color: #fc8b0a;
         font-size: 18px;
         margin: 10px;
     }
