@@ -67,6 +67,11 @@ nav ul li a{
     font-size: 19px;
     text-transform: uppercase;
     color: #434C74;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a:hover{
+    color: #fc8b0a;
 }
 
 nav ul li #logoNav{
@@ -104,6 +109,7 @@ main{
 .text-bx h1{
     font-size: 3rem;
     text-transform: uppercase;
+    color: #434C74;
 }
 
 .text-bx h1 strong{
@@ -181,6 +187,16 @@ main{
 .img-bx img{
     width: 100%;
     transition: 1s ease-in-out;
+    animation: moveImg 0.8s reverse linear;
+}
+
+@keyframes moveImg{
+    to{
+        margin-left: 500px;
+    }
+    from{
+        margin-left: 0px;
+    }
 }
 
 footer{
@@ -241,38 +257,39 @@ footer{
 
     nav ul li{
         padding: 10px;
-        border-bottom: 1px solid #fff;
     }
 
     nav ul li a{
        font-size: 18px;
        color: #fff;
+       border-bottom: 1px solid #fff;
     }
 
-    nav ul li #logoNav{
+    nav ul li p a{
+        border-bottom: none;
+        transform: translateY(-150%);
+    }
+
+    nav ul li p #logoNav{
         display: flex;
-        border: 2px solid #fff;
-        border-radius: 250px;
-        width: 200px;
-        height: 200px;
+        top: 15px;
     }
 
-    nav ul li #logoNav img{
+    nav ul li p #logoNav img{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 60px;
         height: 70px;
-        margin: 60px 15px;
     }
 
-    nav ul li #logoNov p strong{
-        margin-top: 90px;
-        color: #fc8b0a;
+    nav ul li p #logoNav strong{
+        margin: 0px 0px 40px 0px;
     }
 
-    nav ul li #logoNav b{
+    nav ul li p #logoNav b{
         margin-top: 40px;
+        color: #fc8b0a;
     }
 
     nav ul button{
@@ -280,7 +297,9 @@ footer{
         font-size: 18px;
         margin: 10px;
     }
-
+    nav ul button:hover{
+        background-color: #4DBC93;
+    }
     main{
         flex-direction: column;
     }
