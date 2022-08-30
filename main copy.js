@@ -29,12 +29,14 @@ document.querySelectorAll('[wm-nav]').forEach(link => {
 
 document.querySelectorAll('[all-nav]').forEach(link => {
     link.onclick = function(e){
+        console.log(link)
         e.preventDefault()
-
+        
         const container = document.querySelector('.container')
         
         fetch(link.getAttribute('all-nav'))
             .then(resp => resp.text())
             .then(html => container.innerHTML = html)
-    }
+        }
+    
 });

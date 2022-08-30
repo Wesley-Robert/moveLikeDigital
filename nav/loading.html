@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Move Like Loading</title>
-    <link rel="shortcut icon" href="../img/Lalampada.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style.css">
     <style>
         body{
             background-color: #434C74;
         }
+        .container{
+            margin: 0;
+            padding: 0;
+        }
 
-        .loading{
+        .container .loading{
             width: 100%;
             height: 100%;
             background-color: #434C74;
@@ -54,13 +50,13 @@
             left: 50%;
             transform: translate3d(-50%, -50%, 0);
             background: #434C74;
-            width: 400px;
-            height: 400px;
+            width: 470px;
+            height: 470px;
             border-radius: 50%;
 
         }
 
-        .loading p{
+        .container .loading p{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -88,28 +84,51 @@
             height: 195px;
         }
 
-        .loading p a{
+        .container .loading p a{
             text-decoration: none;
             color: #fff;
             font-size: 2.5em;
         }
 
-        .loading p a strong{
+        .container .loading p a strong{
             margin-bottom: 90px;
         }
 
-        .loading p a b{
+        .container .loading p a b{
             margin-top: 90px;
             color: #fc8b0a;
+        }
+
+        @media (max-width: 970px) {
+            #circOne{
+                width: 300px;
+                height: 300px;
+            }
+
+            #circTwo{
+                width: 270px;
+                height: 270px;
+            }
+
+            #logoNav img{
+                width: 70px;
+                height: 85px;
+            }
+
+            .container .loading p a strong, .container .loading p a b{
+                margin-bottom: 10px;
+            }
         }
 
     </style>
 </head>
 <body>
-    <div class="loading">
-        <span id="circOne"> </span>
-        <span id="circTwo"> </span>
-        <p><a href="/nav/loading.html" id="logoNav" ><strong>Move</strong><img src="../img/Lalampada.png"><b>Like</b></a></p>
+    <div class="container">
+        <div class="loading">
+            <span id="circOne"> </span>
+            <span id="circTwo"> </span>
+            <p><a href="/nav/loading.html" id="logoNav" ><strong>Move</strong><img src="../img/Lalampada.png"><b>Like</b></a></p>
+        </div>
     </div>
 </body>
 </html>
