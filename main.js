@@ -12,8 +12,6 @@ menuBar.addEventListener('click', function(){
 
     menu.classList.toggle('active');
 });
-
-
 // Chamadas
 document.querySelectorAll('[wm-nav]').forEach(link => {
     link.onclick = function(e){
@@ -23,10 +21,9 @@ document.querySelectorAll('[wm-nav]').forEach(link => {
         
         fetch(link.getAttribute('wm-nav'))
             .then(resp => resp.text())
-            .then(html => main.innerHTML = html)
+            .then(html => main.innerHTML = html)  
     }
 });
-
 document.querySelectorAll('[all-nav]').forEach(link => {
     link.onclick = function(e){
         e.preventDefault()
@@ -38,3 +35,15 @@ document.querySelectorAll('[all-nav]').forEach(link => {
             .then(html => container.innerHTML = html)
     }
 });
+document.querySelectorAll('[js-rb]').forEach(link => {
+    link.onclick = function(e){
+        e.preventDefault()
+
+        const scriptNew = document.querySelector('script')
+        
+        fetch(link.getAttribute('js-rb'))
+            .then(resp => resp.text())
+            .then(html => scriptNew.innerHTML = html)
+
+    }
+})
