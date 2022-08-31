@@ -35,15 +35,3 @@ document.querySelectorAll('[all-nav]').forEach(link => {
             .then(html => container.innerHTML = html)
     }
 });
-document.querySelectorAll('[js-rb]').forEach(link => {
-    link.onclick = function(e){
-        e.preventDefault()
-
-        const scriptNew = document.querySelector('script')
-        
-        fetch(link.getAttribute('js-rb'))
-            .then(resp => resp.text())
-            .then(html => scriptNew.innerHTML = html)
-
-    }
-})
