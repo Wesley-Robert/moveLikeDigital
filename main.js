@@ -12,26 +12,42 @@ menuBar.addEventListener('click', function(){
 
     menu.classList.toggle('active');
 });
+
 // Chamadas
 document.querySelectorAll('[wm-nav]').forEach(link => {
     link.onclick = function(e){
         e.preventDefault()
-        
+
         const main = document.querySelector('main')
         
         fetch(link.getAttribute('wm-nav'))
             .then(resp => resp.text())
-            .then(html => main.innerHTML = html)  
+            .then(html => main.innerHTML = html)
     }
-});
+})
+
 document.querySelectorAll('[all-nav]').forEach(link => {
     link.onclick = function(e){
         e.preventDefault()
 
-        const container = document.querySelector('.container')
+        const container = document.querySelector('body')
         
         fetch(link.getAttribute('all-nav'))
             .then(resp => resp.text())
             .then(html => container.innerHTML = html)
     }
 });
+
+
+const scripts = function(){
+    document.querySelectorAll('.clients img').forEach(function(img){
+        img.onclick = function(){
+            img.style.display = 'none';
+        }
+    })
+    document.querySelectorAll('.clients .p-tx').forEach(function(txtP){
+        txtP.onclick = function(){
+            txtP.style.display = 'flex' //Tem que adicionar a tag aqui não esquece.
+        }
+    })
+}
