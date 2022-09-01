@@ -40,14 +40,10 @@ document.querySelectorAll('[all-nav]').forEach(link => {
 
 
 const scripts = function(){
-    document.querySelectorAll('.clients img').forEach(function(img){
+    let img = document.querySelectorAll('.clients img')
         img.onclick = function(){
-            img.style.display = 'none';
-        }
-    })
-    document.querySelectorAll('.clients .p-tx').forEach(function(txtP){
-        txtP.onclick = function(){
-            txtP.style.display = 'flex' //Tem que adicionar a tag aqui não esquece.
-        }
-    })
+            img.classList.toggle('noPreview')
+            let txtP = document.querySelector('.clients .p-tx')
+                txtP.classList.toggle('previewText')
+        }  
 }
