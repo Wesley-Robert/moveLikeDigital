@@ -14,7 +14,7 @@ menuBar.addEventListener('click', function(){
 });
 
 // Chamadas
-document.querySelectorAll('[wm-nav]').forEach(link => {
+document.querySelectorAll('[wm-nav]').forEach(link => { 
     link.onclick = function(e){
         e.preventDefault()
 
@@ -23,7 +23,10 @@ document.querySelectorAll('[wm-nav]').forEach(link => {
         fetch(link.getAttribute('wm-nav'))
             .then(resp => resp.text())
             .then(html => main.innerHTML = html)
+
+        scripts()
     }
+     
 })
 
 document.querySelectorAll('[all-nav]').forEach(link => {
@@ -36,8 +39,7 @@ document.querySelectorAll('[all-nav]').forEach(link => {
             if(response.ok){
                 link.getAttribute('all-nav')
                     .then(resp => resp.text())
-                    .then(html => container.innerHTML = html)
-                scripts()  
+                    .then(html => container.innerHTML = html) 
             }else{
                 console.log('Sucesso na conexão')
             }
@@ -46,7 +48,6 @@ document.querySelectorAll('[all-nav]').forEach(link => {
 
     }
 });
-
 
 const scripts = function(){
     document.querySelectorAll('.clients').forEach(function(client){
