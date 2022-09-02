@@ -81,14 +81,18 @@ nav ul li #logoNav{
 nav ul button{
     border: none;
     background-color: #fc8b0a;
-    color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 16px;
-    letter-spacing: 1px;
     margin-left: 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+}
+
+nav ul button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 nav ul button:hover{
