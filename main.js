@@ -1,3 +1,4 @@
+
 // Menu hamburguer
 let menu = document.querySelector('nav ul');
 let menuBar = document.querySelector('nav .menu-icon');
@@ -14,6 +15,7 @@ menuBar.addEventListener('click', function(){
 });
 
 // Chamadas
+/*
 document.querySelectorAll('[wm-nav]').forEach(link => { 
     link.onclick = function(e){
         e.preventDefault()
@@ -23,15 +25,13 @@ document.querySelectorAll('[wm-nav]').forEach(link => {
         fetch(link.getAttribute('wm-nav'))
             .then(resp => resp.text())
             .then(html => main.innerHTML = html)
-
-        scripts()
     }
      
 })
 
 document.querySelectorAll('[all-nav]').forEach(link => {
     link.onclick = function(e){
-        e.preventDefault()
+        
 
         const container = document.querySelector('body')
         
@@ -48,14 +48,4 @@ document.querySelectorAll('[all-nav]').forEach(link => {
 
     }
 });
-
-const scripts = function(){
-    document.querySelectorAll('.clients').forEach(function(client){
-        client.onclick = function(){
-            let img = client.querySelector('img')
-            img.classList.toggle('noPreview')
-            let txtP = client.querySelector('div')
-                txtP.classList.toggle('previewText')
-        }  
-    })
-}
+*/

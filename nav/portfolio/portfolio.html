@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/Lalampada.png" type="image/x-icon">
+    <title>Move Like</title>
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main h1{
+            display: flex;
+            justify-content: left;
+            font-size: 2em;
+            color: #434C74;
+        }
+
+        main p{
+            display: flex;
+            justify-content: left;
+            font-size: 1.2em;
+            color: #434C74;
+        }
+
+        .clients{
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            justify-content: space-between;
+            box-shadow: 1px 1px 10px gray;
+            border-radius: 25px;
+            height: 300px;
+        }
+
+        .clients img{
+            width: 250px;
+            height: 250px;
+            border-radius: 25px 0px 0px 25px;
+            margin: 25px;
+            padding: 25px;
+            border-right: 2px solid gray;
+            cursor: pointer;
+        }
+
+        #paiEFilhos{
+            height: 150px;
+            background-color: #b6f4f8a6;
+            border-radius: 0;
+        }
+
+        #acertsoft{
+            height: 200px;
+        }
+
+        #pindorama{
+            height: 150px;
+        }
+
+        #vitoria{
+            height: 200px;
+        }
+
+        .clients .p-tx{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 80%;
+            height: 250px;
+            border-radius: 0px 25px 25px 0px;
+        }
+
+        .clients .p-tx h2{
+            display: flex;
+            margin: 2vh 0px 2vh 2vw;
+            font-size: 2em;
+            color: #434C74;
+        }
+
+        .clients .p-tx hr{
+            width: 450px;
+            margin-left: 2vw;
+        }
+
+        .clients .p-tx p{
+            margin: 0px 0px 15vh 1vh;
+            padding: 25px;
+            font-size: 1.2em;
+            color: #434C74;
+        }
+
+        @media (max-width: 970px) {
+            main{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .clients .p-tx{
+                display: none;
+            }
+
+            .clients img{
+                border: none;
+            }
+
+            .clients .noPreview{
+                display: none;
+            }
+
+            .clients .previewText{
+                display: flex;
+                width: 250px;
+                height: 250px;
+                border-radius: 25px 0px 0px 25px;
+                margin: 25px;
+                padding: 25px;
+            }
+
+            .clients .previewText h2{
+                display: flex;
+                font-size: 1.1em;
+                padding: 0;
+                margin: 1px;
+            }
+
+            .clients .previewText p{
+                display: flex;
+                font-size: 0.9em;
+                padding: 1px;
+                margin: 1px;
+            }
+            .clients .previewText hr{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href all-nav="nav/loading.html"><strong>Move</strong><img src="../../img/Lalampada.png"><b>Like</b></a>
+                </div>
+                <ul>
+                    <li><p><a href="index.html" id="logoNav"><strong>Move</strong><img src="../../img/Lalampada.png"><b>Like</b></a></p></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../servicos/servicos.html">Serviços</a></li>
+                    <li><a href="../portfolio/portfolio.html">portfolio</a></li>
+                    <li><a href="../contato/contato.html">Contato</a></li>
+                    <button type="button">Começando</button>
+                </ul>
+                <div class="menu-icon">
+                    <img src="../../img/menu.png" alt="icon menu">
+                </div>
+            </nav>
+    <main>
+        <h1>Clientes</h1>
+        <p>Nossos principais cliente, e estamos sempre crescendo...</p>
+        <hr>
+        <div class="clients">
+            <img id="xoks" src="../../img/clients/xoks.png">
+            <div class="p-tx">
+                <h2>Xok`s um doce presente</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, modi, ea praesentium repellat fugit atque eos laboriosam vero magnam quod sequi architecto quaerat, iste sint explicabo. Aliquid praesentium unde nam.</p>
+            </div>
+        </div>
+        <div class="clients">
+            <img id="paiEFilhos" src="../../img/clients/agropecuaria.png">
+            <div class="p-tx">
+                <h2>Agropet Pai e Filhos</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, modi, ea praesentium repellat fugit atque eos laboriosam vero magnam quod sequi architecto quaerat, iste sint explicabo. Aliquid praesentium unde nam.</p>
+            </div>
+        </div>
+        <div class="clients">
+            <img id="ajMartins"  src="../../img/clients/ajmartins.png">
+            <div class="p-tx">
+                <h2>Aj Martins Madeiras</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, modi, ea praesentium repellat fugit atque eos laboriosam vero magnam quod sequi architecto quaerat, iste sint explicabo. Aliquid praesentium unde nam.</p>
+            </div>
+        </div>
+        <div class="clients">
+            <img id="acertsoft" src="../../img/clients/acertsoft.png">
+            <div class="p-tx">
+                <h2>AcertSoft Sistema de Gestão</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, modi, ea praesentium repellat fugit atque eos laboriosam vero magnam quod sequi architecto quaerat, iste sint explicabo. Aliquid praesentium unde nam.</p>
+            </div>
+        </div>
+        <div class="clients">
+            <img id="pindorama" src="../../img/clients/pindorama.png">
+            <div class="p-tx">
+                <h2>Pindorama Auto Center</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, modi, ea praesentium repellat fugit atque eos laboriosam vero magnam quod sequi architecto quaerat, iste sint explicabo. Aliquid praesentium unde nam.</p>
+            </div>
+        </div>
+        <div  class="clients">
+            <img id="vitoria" src="../../img/clients/Untitled-1.png">
+            <div class="p-tx">
+                <h2>Vitória Padilha Materiais de Construção</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, modi, ea praesentium repellat fugit atque eos laboriosam vero magnam quod sequi architecto quaerat, iste sint explicabo. Aliquid praesentium unde nam.</p>
+            </div>
+        </div>
+    </main>
+    </div>
+    <footer>
+        <div class="foot-tx">
+            <ul>
+                <li>Telefone: <a href="tel:+5551991371020">(51) 99137-1020</a></li>
+                <li>E-amil: <a href="mailto:movelike@hotmail.com">movelike@hotmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
