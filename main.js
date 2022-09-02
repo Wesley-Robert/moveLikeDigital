@@ -49,27 +49,12 @@ document.querySelectorAll('[all-nav]').forEach(link => {
 
 
 const scripts = function(){
-    let img = document.querySelectorAll('.clients img').forEach(function(img){
-        img.onclick = function(){
+    document.querySelectorAll('.clients').forEach(function(client){
+        client.onclick = function(){
+            let img = client.querySelector('img')
             img.classList.toggle('noPreview')
-            let txtP = document.querySelectorAll('.clients .p-tx').forEach(function(txtP){
+            let txtP = client.querySelector('div')
                 txtP.classList.toggle('previewText')
-            })    
         }  
     })
 }
-
-let myImage = document.querySelector('.img-bx img');
-
-fetch('MoveLike oficial.jpg').then(function(response){
-    if(response.ok){
-        response.blob().then(function(myBlob){
-            let objectURL = URL.createObjectURL(myBlob)
-            myImage.src = objectURL
-        })
-    }else{
-        console.log('Network response was not ok')
-    }
-}).catch(function(error){
-    console.log('There has been a problem with your fetch operation: ' + error.message)
-})
