@@ -33,31 +33,64 @@
         .servicos li{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             margin: 20px;
             list-style: none;
             flex: 1 1 420px;
             box-shadow: 0 0 15px #434C74;
-            border-radius: 10px;
+            border-radius: 15px 0px 15px 0px;
             width: 400px;
             height: 500px;
         }
 
         .servicos li img{
-            border: 2px solid #434C74;
-            border-radius: 5px;
-            width: 90%;
+            background-position: center;
+            background-size: 140%;
+            width: 100%;
             height: 60%;
+            cursor: pointer;
+            border-radius: 15px 0px 0px 0px;
         }
 
-        .servicos li h2{
+        #desPageImg{
+            background-image: url('../../img/services/pessoalNote.jpeg');
+        }
+
+        #vetLgosImg{
+            background-image: url('../../img/services/tabletDados.jpeg');
+        }
+
+        #funVendaImg{
+            background-image: url('../../img/services/noteCelularDados.jpeg');
+        }
+
+        #dinPublicacaoImg{
+            background-image: url('../../img/services/noteCaraRua.jpeg');
+        }
+
+        .servicos li img:hover{
+            background-size: cover;
+        }
+
+        .servicos li .bx-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            height: 40%;
+            width: 100%;
+            border-radius: 0px 0px 15px 0px;
+        }
+
+        .servicos li .bx-text h2{
             margin: 5px 10px;
             color: #fc8b0a;
             text-align: center;
         }
 
-        .servicos li p{
+        .servicos li .bx-text p{
             margin: 5px 10px;
             text-align: center;
             color: #434C74;
@@ -93,24 +126,32 @@
         <p>Lorem ipsum dolor, sit amet consectetur inventore!</p>
         <ul class="servicos">
             <li id="desPage">
-                <img src="../../img/services/pessoalNote.jpg" alt="">
-                <h2>Desenvolvimento da pagina</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cumque delectus facilis id nostrum magnam voluptatum blanditiis minima rerum eum atque, laudantium pariatur ab sapiente consequatur vel, harum quam tenetur.</p>
+                <img id="desPageImg" alt="">
+                <div class="bx-text">
+                    <h2>Desenvolvimento da pagina</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cumque delectus facilis id nostrum magnam voluptatum blanditiis minima rerum eum atque, laudantium pariatur ab sapiente consequatur vel, harum quam tenetur.</p>
+                </div>
             </li>
             <li id="vetLogos">
-                <img src="../../img/services/tabletDados.jpg" alt="">
-                <h2>Vetorização de Logos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iure iusto inventore placeat optio eos tempore molestias animi sit alias dolor minima dignissimos dolores ea natus, esse eum tenetur accusantium!</p>
+                <img id="vetLgosImg" alt="">
+                <div class="bx-text">
+                    <h2>Vetorização de Logos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iure iusto inventore placeat optio eos tempore molestias animi sit alias dolor minima dignissimos dolores ea natus, esse eum tenetur accusantium!</p>
+                </div>
             </li>
             <li id="funVendas">
-                <img src="../../img/services/noteCelularDados.jpg" alt="">
-                <h2>Funil de vendas</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius blanditiis aperiam nulla ad nesciunt eaque natus ipsa saepe illo maiores totam debitis, ullam ex doloremque error dolore expedita! Quaerat, nostrum.</p>
+                <img id="funVendaImg" alt="">
+                <div class="bx-text">
+                    <h2>Funil de vendas</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius blanditiis aperiam nulla ad nesciunt eaque natus ipsa saepe illo maiores totam debitis, ullam ex doloremque error dolore expedita! Quaerat, nostrum.</p>
+                </div>
             </li>
             <li id="dinPublicacao">
-                <img src="../../img/services/noteCaraRua.jpg" alt="">
-                <h2>Dinamismo de publicação</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo provident debitis iusto est aliquam, veniam accusamus error ullam earum recusandae asperiores corrupti doloremque officia aspernatur eius ?</p>
+                <img id="dinPublicacaoImg" alt="">
+                <div class="bx-text">
+                    <h2>Dinamismo de publicação</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo provident debitis iusto est aliquam, veniam accusamus error ullam earum recusandae asperiores corrupti doloremque officia aspernatur eius ?</p>
+                </div>
             </li>
         </ul>
     </main>
