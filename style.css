@@ -100,7 +100,27 @@ nav ul button{
     transition: 0.3s ease-in-out;
 }
 
-nav ul button a{
+.medias-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.medias-sociais button{
+    border: none;
+    background-color: #434C74;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.medias-sociais button:hover{
+    background-color: #fc8b0a;
+}
+
+nav ul button a, .medias-sociais button a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;

@@ -100,8 +100,33 @@
             font-size: 1.2em;
             color: #434C74;
         }
+        
+        .clients #addClient{
+            background-color: transparent;
+            color:  #434C74;
+            width: 150px;
+            height: 150px;
+            font-size: 500px;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            margin-bottom: 100px; 
+        }
+        
+        .clients #addClient:hover{
+            animation: girar ease-in-out .5s;         
+        }
 
-        ion-icon{
+        @keyframes girar{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .clients ion-icon{
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -166,6 +191,7 @@
                 display: none;
             }
         }
+
     </style>
 </head>
 <body>
@@ -266,6 +292,10 @@
                         <a href="https://www.google.com/search?q=Agropet+Pai+e+Filhos&oq=Agropet+Pai+e+Filhos&aqs=chrome..69i57j33i160l3.834j0j4&sourceid=chrome&ie=UTF-8"  target="_blank"><ion-icon name="location-outline"></ion-icon></a>
                     </div>
                 </div>
+            </div>
+            <div class="clients">
+                <h2>Venha fazer parte dos nossos clientes...</h2>
+                <ion-icon id="addClient" name="add-circle-outline"></ion-icon>
             </div>
         </div>
     </main>
